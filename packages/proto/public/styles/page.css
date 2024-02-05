@@ -1,0 +1,32 @@
+header {
+    background-color: rgba(214, 200, 173, 0.5);
+}
+
+h1 {
+    color: #14315C;
+}
+
+h2 {
+    color: #285599
+}
+
+a {
+    color: #855800
+}
+
+h1, h2 {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+p, a, li {
+    font-family: 'Spectral', Arial, Helvetica, sans-serif;
+}
+
+svg.icon {
+    display: inline;
+    height: 2em;
+    width: 2em;
+    vertical-align: top;
+    fill: currentColor;
+  }
