@@ -44,6 +44,19 @@
       <rect x="51.71" y="89.75" width="26.65" height="1.5"/>
       <!-- <text x="0" y="111" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by glyph.faisalovers</text>
       <text x="0" y="116" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>     -->
-    </quill>
+    </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 308 686.25">
+      <defs>
+        <style type="text/css">
+            .fil0 {fill:black}
+        </style>
+      </defs>
+      <g>
+        <polygon class="fil0" points="308,239 154,390 0,239 0,397 154,549 308,397 "/>
+        <polygon class="fil0" points="308,0 154,151 0,0 0,158 154,310 308,158 "/>
+      </g>
+      <!-- <text x="0" y="564" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by QOLBIN SALIIM</text>
+      <text x="0" y="569" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>     -->
+    </symbol>
   </defs>
 </svg>
