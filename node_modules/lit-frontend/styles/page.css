@@ -1,8 +1,10 @@
+/* Reset */
 * {
-    margin: 0em;
+    margin: 0;
     box-sizing: border-box;
 }
 
+/* Default Light Mode */
 body {
     display: flex;
     flex-direction: column;
@@ -15,24 +17,21 @@ img {
 header {
     background-color: rgba(214, 200, 173, 0.5);
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em 0;
 }
 
 h1 {
     color: #14315C;
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
 }
 
 h2 {
     color: #285599;
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
 }
 
 a {
     color: #855800;
-}
-
-h1, h2 {
-    font-family: "Lexend", Arial, Helvetica, sans-serif;
 }
 
 .webapp_name {
@@ -41,10 +40,12 @@ h1, h2 {
     padding-bottom: 0.1em;
 }
 
-p, a, li {
+/* Paragraphs, Links, List Items, Dropdowns */
+p, a, li, drop-down {
     font-family: 'Spectral', Arial, Helvetica, sans-serif;
 }
 
+/* Icons */
 svg.icon {
     display: inline;
     height: 2em;
@@ -78,11 +79,47 @@ button {
     font-family: "Lexend", Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     background-color: transparent;
-    border-color: #14315C;
+    border: 1px solid #14315C;
     font-weight: 700;
-    padding: 0.5em;
+    padding: 0.5em 1em;
 }
 
 section {
     margin: 2em;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+    background-color: #1A1A1A;
+    color: #F0F0F0;
+}
+
+header.dark-mode {
+    background-color: #2C2C2C;
+}
+
+h1.dark-mode {
+    color: #FF7F0E;
+}
+
+h2.dark-mode {
+    color: #87CEEB;
+}
+
+a.dark-mode {
+    color: #D9D9D9;
+}
+
+.webapp_name.dark-mode {
+    color: #FFD700;
+}
+
+button.dark-mode {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+section.dark-mode {
+    background-color: #222222;
 }

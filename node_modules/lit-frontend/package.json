@@ -13,7 +13,9 @@
   },
   "description": "",
   "devDependencies": {
+    "css-loader": "^6.10.0",
+    "style-loader": "^3.3.4",
     "typescript": "^5.3.3",
-    "vite": "^5.0.12"
+    "vite": "^5.1.3"
   }
 }

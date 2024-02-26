@@ -7,6 +7,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Lexend:wght@500&display=swap" rel="stylesheet">
         <link href="/styles/page.css" rel='stylesheet' type='text/css'/>
+        <script type="module" src="/src/components/drop-down.ts"></script>
+        <script src="/src/dark-mode.ts"></script>
     </head>
     <body>
         <article>
@@ -16,9 +18,11 @@
                         <use href="/icons/office.svg#icon-pin" />
                     </svg>
                     Home
-                    <svg class="icon" style="float: right;">
-                        <use href="/icons/office.svg#icon-profile" />
-                    </svg>
+                    <drop-down items='{"Account":"account.html", "Logout":"index.html"}' style="float: right">
+                        <svg class="icon">
+                            <use href="/icons/office.svg#icon-profile" />
+                        </svg>
+                    </drop-down>
                 </h1>
             </header>            
             <section class="grid-container">
