@@ -91,24 +91,24 @@ section {
 /* Dark Mode */
 
 body.dark-mode {
-    background-color: #1A1A1A;
-    color: #F0F0F0;
+    background-color: #333333;
+    color: #FFFFFF;
 }
 
 header.dark-mode {
-    background-color: #2C2C2C;
+    background-color: #2B2B2B;
 }
 
 h1.dark-mode {
-    color: #FF7F0E;
+    color: #D2D2D2;
 }
 
 h2.dark-mode {
-    color: #87CEEB;
+    color: #808080;
 }
 
 a.dark-mode {
-    color: #D9D9D9;
+    color: #FFD700;
 }
 
 .webapp_name.dark-mode {
@@ -120,6 +120,6 @@ button.dark-mode {
     border-color: #ffffff;
 }
 
-section.dark-mode {
+/* section.dark-mode {
     background-color: #222222;
-}
+} */

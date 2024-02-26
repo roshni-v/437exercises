@@ -26,7 +26,7 @@ export class DropDownElement extends LitElement {
     "--position-left: auto; --position-right: 0; background-color: rgba(255, 255, 255, 0.8); border-radius: 0.2em";
     
     const menuItemStyle = 
-      "color: #855800; text-decoration: none; border-bottom: 0.1px solid #855800;"
+      "color: #2B2B2B; text-decoration: none; border-bottom: 0.1px solid #855800;"
   
     return html`
       <input
