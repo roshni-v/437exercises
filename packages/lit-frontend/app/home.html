@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Lexend:wght@500&display=swap" rel="stylesheet">
         <link href="/styles/page.css" rel='stylesheet' type='text/css'/>
         <script type="module" src="/src/components/drop-down.ts"></script>
+        <script type="module" src="/src/components/list-card.ts"></script>
         <script src="/src/dark-mode.ts"></script>
     </head>
     <body>
@@ -26,18 +27,18 @@
                 </h1>
             </header>            
             <section class="grid-container">
-                <div class="grid-item">
-                    <h2>Authors I Like</h2>
-                    <ol>
-                        <li><a href="oscar_wilde.html">Oscar Wilde</a></li>
-                    </ol>
-                </div>
-                <div class="grid-item">
-                    <h2>Books I Like</h2>
-                    <ol>
-                        <li><a href="the_picture_of_dorian_gray.html">The Picture of Dorian Gray</a></li>
-                    </ol>
-                </div>                         
+                <list-card>
+                    <h2 slot="title">Authors I Like</h2>
+                    <a href="oscar_wilde.html">Oscar Wilde</a>
+                </list-card>
+                <list-card>
+                    <h2 slot="title">Books I Like</h2>
+                    <a href="the_picture_of_dorian_gray.html">The Picture of Dorian Gray</a>
+                </list-card> 
+                <list-card>
+                    <h2 slot="title">Eras of Interest</h2>
+                    <a href="1890s.html">1890s</a>
+                </list-card>                                  
             </section>
         </article>     
     </body>
