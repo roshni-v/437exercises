@@ -18,13 +18,15 @@ export class ListCard extends LitElement {
 
   render() {
     return html`
-      <slot name="title">
-        <h2>${this.title}</h2>
-      </slot>
-      <div class="scrollable-list">
-        <ul>
-            <slot></slot>
-        </ul>
+      <div class="list-card-container"> <!-- Wrapper container -->
+        <slot name="title">
+          <h2>${this.title}</h2>
+        </slot>
+        <div class="scrollable-list">
+          <ul>
+              <slot></slot>
+          </ul>
+        </div>
       </div>
     `;
   }  
@@ -32,10 +34,14 @@ export class ListCard extends LitElement {
   static styles = css`
   :host {
     display: block;
+    max-width: 400px;
+  }
+
+  .list-card-container { /* Added container */
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
-    max-width: 400px;
+    margin-bottom: 20px; /* Add margin-bottom for space below the component */
   }
 
   .scrollable-list {
