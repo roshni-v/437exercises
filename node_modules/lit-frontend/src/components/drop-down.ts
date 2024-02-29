@@ -24,26 +24,19 @@ export class DropDownElement extends LitElement {
   render() {
     const menuStyle =
     "--position-left: auto; --position-right: 0; background-color: rgba(255, 255, 255, 0.8); border-radius: 0.2em";
-    
-    const menuItemStyle = 
-      "color: #2B2B2B; text-decoration: none; border-bottom: 0.1px solid #855800;"
-  
+
     return html`
-      <input
-        type="checkbox"
-        id="is-shown"
-        @change=${this._handleChange}
-        .checked=${this.open} />
-      <label for="is-shown">
-        <slot>Menu</slot>
-      </label>
-      <slot name="menu" style=${menuStyle}>
-      <ul>
-        ${Object.entries(this._items).map(([key, value]) => {
-          return html`<li><a style=${menuItemStyle} href="/app/${value}">${key}</a></li>`;
-        })}
-      </ul>
-      </slot>
+    <input
+    type="checkbox"
+    id="is-shown"
+    @change=${this._handleChange}
+    .checked=${this.open} />
+    <label for="is-shown">
+      <slot>Menu</slot>
+    </label>
+    <slot name="menu" style=${menuStyle}>
+      <slot></slot>
+    </slot>
     `;
   }
 

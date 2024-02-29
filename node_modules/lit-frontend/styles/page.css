@@ -73,20 +73,6 @@ svg.icon {
     overflow: hidden;
 }
 
-body.dark-mode article.intro {
-    position: relative;
-    text-align: left;
-    font-weight: 700;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(to bottom, rgba(51, 51, 51, 0.6), rgba(0, 0, 0, 1)), url('/images/darkModeIndexBackground.jpg');
-    background-size: cover;
-    background-position: center;
-    font-size: 1.5em;
-    padding: 2em;
-    overflow: hidden; 
-}
-
 button {
     margin-top: 1em;
     color: #14315C;
@@ -96,6 +82,21 @@ button {
     border: 1px solid #14315C;
     font-weight: 700;
     padding: 0.5em 1em;
+}
+
+section {
+    margin: 2em;
+}
+
+drop-down a {
+    display: block;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+    background-color: #333333;
+    color: #FFFFFF;
 }
 
 body.dark-mode button {
@@ -109,15 +110,18 @@ body.dark-mode button {
     padding: 0.5em 1em;
 }
 
-section {
-    margin: 2em;
-}
-
-/* Dark Mode */
-
-body.dark-mode {
-    background-color: #333333;
-    color: #FFFFFF;
+body.dark-mode article.intro {
+    position: relative;
+    text-align: left;
+    font-weight: 700;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 0.6), rgba(0, 0, 0, 1)), url('/images/darkModeIndexBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    font-size: 1.5em;
+    padding: 2em;
+    overflow: hidden; 
 }
 
 header.dark-mode {
