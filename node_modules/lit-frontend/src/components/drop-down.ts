@@ -23,7 +23,7 @@ export class DropDownElement extends LitElement {
 
   render() {
     const menuStyle =
-    "--position-left: auto; --position-right: 0; background-color: rgba(255, 255, 255, 0.8); border-radius: 0.2em";
+    "--position-left: auto; --position-right: 0; background-color: rgb(255, 255, 255); border-radius: 0.2em; border: 1px solid rgba(0, 0, 0, 0.2);";
 
     return html`
     <input
@@ -64,6 +64,12 @@ export class DropDownElement extends LitElement {
       left: var(--position-left);
       right: var(--position-right);
     }
+
+    slot[name="menu"]::slotted(ul) {
+      white-space: nowrap;
+      display: inline-block;
+      list-style: none;
+    }    
 
     #is-shown:checked ~ slot[name="menu"] {
       display: block;

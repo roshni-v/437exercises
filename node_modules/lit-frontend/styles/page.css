@@ -46,7 +46,7 @@ p, a, li, drop-down {
 }
 
 /* Icons */
-svg.icon {
+svg {
     display: inline;
     height: 2em;
     width: 2em;
@@ -88,7 +88,7 @@ section {
     margin: 2em;
 }
 
-drop-down a {
+drop-down * {
     display: block;
 }
 
@@ -137,11 +137,11 @@ h2.dark-mode {
 }
 
 a.dark-mode {
-    color: #FFD700;
+    color: #D4AF37;
 }
 
 .webapp_name.dark-mode {
-    color: #FFD700;
+    color: #D4AF37;
 }
 
 button.dark-mode {

@@ -58,5 +58,16 @@
       <!-- <text x="0" y="564" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by QOLBIN SALIIM</text>
       <text x="0" y="569" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>     -->
     </symbol>
+    <symbol id="more-info" viewBox="0 0 100 125">
+        <title>21</title>
+        <g data-name="Group">
+            <path data-name="Compound Path" d="M50,39.9A10.1,10.1,0,1,0,60.1,50,10.1,10.1,0,0,0,50,39.9Zm0,16.2A6.1,6.1,0,1,1,56.1,50,6.1,6.1,0,0,1,50,56.1Z"/>
+            <path data-name="Compound Path" d="M50,13.6A10.1,10.1,0,1,0,60.1,23.7,10.1,10.1,0,0,0,50,13.6Zm0,16.2a6.1,6.1,0,1,1,6.1-6.1A6.1,6.1,0,0,1,50,29.8Z"/>
+            <path data-name="Compound Path" d="M50,66.2A10.1,10.1,0,1,0,60.1,76.3,10.1,10.1,0,0,0,50,66.2Zm0,16.2a6.1,6.1,0,1,1,6.1-6.1A6.1,6.1,0,0,1,50,82.4Z"/>
+        </g>
+    </symbol>
+    <symbol id="x" viewBox="0 0 100 125">
+      <polygon fill="#000000" points="87.316,75.934 61.387,50 87.316,24.068 75.934,12.685 50.003,38.616 24.072,12.685 12.689,24.068   38.621,50 12.684,75.934 24.066,87.316 50.003,61.381 75.934,87.316 "/>
+    </symbol>
   </defs>
 </svg>
