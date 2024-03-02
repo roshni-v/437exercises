@@ -38,7 +38,12 @@ export class ListCard extends LitElement {
           </drop-down>
         </div>
         <ul class="list-items">
-          <slot></slot>          
+          <slot></slot>  
+          <li>
+            <add-new-button>
+              <p slot="title">Add To List</p>
+            </add-new-button>             
+          </li>        
         </ul>
       </div>
     `;

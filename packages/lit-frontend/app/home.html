@@ -10,7 +10,7 @@
         <script type="module" src="/src/components/drop-down.ts"></script>
         <script type="module" src="/src/components/list-card.ts"></script>
         <script type="module" src="/src/components/list-card-component.ts"></script>
-        <script type="module" src="/src/components/add-new-list.ts"></script>
+        <script type="module" src="/src/components/add-new-button.ts"></script>
         <script src="/src/dark-mode.ts"></script>
     </head>
     <body>
@@ -32,7 +32,9 @@
                     </drop-down> 
                 </h1>
             </header>  
-            <add-list-button></add-list-button>          
+            <add-new-button>
+                <h2 slot="title">Add New List</h2>
+            </add-new-button>          
             <section class="grid-container">
                 <list-card>
                     <h2 slot="title">Authors I Like</h2>                                                      

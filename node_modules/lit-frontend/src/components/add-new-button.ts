@@ -2,8 +2,8 @@ import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import "/styles/page.css";
 
-@customElement('add-list-button')
-export class AddListButton extends LitElement {
+@customElement('add-new-button')
+export class AddNewButton extends LitElement {
   static styles = css`
     .icon {
       transform: rotate(45deg);
@@ -38,7 +38,7 @@ export class AddListButton extends LitElement {
           <svg class="icon" width="20" height="20">
             <use href="/icons/office.svg#x" />
           </svg>
-          <h2>Add New List</h2>
+          <slot name="title"><slot>
         </button>
       </div>
     `;
