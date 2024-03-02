@@ -20,7 +20,7 @@ export class ListCard extends LitElement {
 
   render() {
     return html`
-      <div class="list-card-container">
+      <div class="list-card-container"> 
         <div class="title-container">
           <div style="margin-right: 20px;">
           <slot name="title">

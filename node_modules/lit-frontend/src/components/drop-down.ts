@@ -100,8 +100,8 @@ export class DropDownElement extends LitElement {
       if (!ev.composedPath().includes(this)) {
         this._toggle(false);
       } else {
-        ev.stopPropagation();
-      }
+        ev.stopPropagation(); 
+      } 
     };
 
     if (open) {
