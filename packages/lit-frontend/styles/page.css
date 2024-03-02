@@ -13,6 +13,7 @@
     --svg-color: var(--text-color); /* Default SVG color */
     --font-family: 'Lexend', Arial, Helvetica, sans-serif; /* Default font family */
     --link-color: #855800; /* Default link color */
+    --button-color: var(--header-background-color); /* Default button color */
   }
 
 body {
@@ -113,6 +114,7 @@ drop-down * {
     --svg-color: var(--text-color); /* Dark mode SVG color */
     --font-family: 'Lexend', Arial, Helvetica, sans-serif; /* Dark mode font family */
     --link-color: #D4AF37; /* Dark mode link color */
+    --button-color: var(--header-background-color); /* Dark mode button color */
     background-color: #333333;
     color: #FFFFFF;
   }
