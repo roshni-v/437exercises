@@ -22,9 +22,6 @@ export class DropDownElement extends LitElement {
   }
 
   render() {
-    const menuStyle =
-    "--position-left: auto; --position-right: 0; background-color: rgb(255, 255, 255); border-radius: 0.2em; border: 1px solid rgba(0, 0, 0, 0.2);";
-
     return html`
     <input
     type="checkbox"
@@ -34,7 +31,7 @@ export class DropDownElement extends LitElement {
     <label for="is-shown">
       <slot>Menu</slot>
     </label>
-    <slot name="menu" style=${menuStyle}>
+    <slot name="menu">
       <slot></slot>
     </slot>
     `;
@@ -61,21 +58,23 @@ export class DropDownElement extends LitElement {
       display: none;
       position: absolute;
       top: 100%;
-      left: var(--position-left);
-      right: var(--position-right);
+      right: 0; // Changed this line
+      border: 1px solid rgba(0, 0, 0, 0.2);
     }
 
-    slot[name="menu"]::slotted(ul) {
+    slot[name="menu"]::slotted(*) {
       white-space: nowrap;
       display: inline-block;
+      border-radius: 0.2em;
+      padding: 5px;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid rgba(0, 0, 0, 0.2);
       list-style: none;
     }    
 
     #is-shown:checked ~ slot[name="menu"] {
       display: block;
     }
-
-    /* CSS for slotted elements and default slot content */
 
     ::slotted(ul[slot="menu"]),
     slot[name="menu"] > ul {

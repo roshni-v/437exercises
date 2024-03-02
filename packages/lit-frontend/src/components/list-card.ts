@@ -21,17 +21,23 @@ export class ListCard extends LitElement {
   render() {
     return html`
       <div class="list-card-container">
-        <div style="display: flex">
+        <div class="title-container">
           <div style="margin-right: 20px;">
-            <slot name="title">
-              <h2>${this.title}</h2>
-            </slot>
+          <slot name="title">
+            <h2 style="color: var(--text-color);">${this.title}</h2>
+          </slot>
           </div>
-          <div style="margin-left: auto;">
-            <slot name="drop-down"></slot>
-          </div>
+          <drop-down style="margin-left: auto">
+            <svg class="icon" width="24" height="24" style="fill: var(--svg-color);">
+              <use href="/icons/office.svg#more-info" />
+            </svg>
+            <ul slot="menu">
+              <li><a href="" style="font-family: var(--font-family); color: var(--link-color);">Rename List</a></li>
+              <li><a href="" style="font-family: var(--font-family); color: var(--link-color);">Delete List</a></li>
+            </ul>
+          </drop-down>
         </div>
-        <ul style="margin-left: 10px; margin-top: 5px; padding: 0; list-style: none;">
+        <ul class="list-items">
           <slot></slot>          
         </ul>
       </div>
@@ -57,6 +63,16 @@ export class ListCard extends LitElement {
     .scrollable-list {
       display: block;
       float: left;
+    }
+
+    .title-container {
+      display: flex;
+    }
+
+    .list-items {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
   `;
 }

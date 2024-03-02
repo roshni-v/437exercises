@@ -5,6 +5,16 @@
 }
 
 /* Default Light Mode */
+
+:root {
+    --background-color: #f0f0f0; /* Default background color */
+    --header-background-color: rgba(214, 200, 173, 0.5); /* Default header background color */
+    --text-color: #14315C; /* Default text color */
+    --svg-color: var(--text-color); /* Default SVG color */
+    --font-family: 'Lexend', Arial, Helvetica, sans-serif; /* Default font family */
+    --link-color: #855800; /* Default link color */
+  }
+
 body {
     display: flex;
     flex-direction: column;
@@ -90,14 +100,22 @@ section {
 
 drop-down * {
     display: block;
+    position: relative;
+    z-index: 1000;
 }
 
 /* Dark Mode */
-
-body.dark-mode {
+  
+  body.dark-mode {
+    --background-color: #333333; /* Dark mode background color */
+    --header-background-color: #2B2B2B; /* Dark mode header background color */
+    --text-color: #FFFFFF; /* Dark mode text color */
+    --svg-color: var(--text-color); /* Dark mode SVG color */
+    --font-family: 'Lexend', Arial, Helvetica, sans-serif; /* Dark mode font family */
+    --link-color: #D4AF37; /* Dark mode link color */
     background-color: #333333;
     color: #FFFFFF;
-}
+  }
 
 body.dark-mode button {
     margin-top: 1em;
