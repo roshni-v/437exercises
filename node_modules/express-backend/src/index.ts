@@ -28,6 +28,7 @@ app.get("/api/profiles/:userid", (req: Request, res: Response) => {
 
 app.post("/api/profiles", (req: Request, res: Response) => {
   const newProfile = req.body;
+  newProfile.darkmode = newProfile.darkmode ? newProfile.darkmode === 'on' : false; // Convert 'on' to true, anything else to false
 
   profiles
     .create(newProfile)
@@ -37,4 +38,15 @@ app.post("/api/profiles", (req: Request, res: Response) => {
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
+});
+
+app.put("/api/profiles/:userid", (req: Request, res: Response) => {
+  const { userid } = req.params;
+  const newProfile = req.body;
+  newProfile.darkmode = newProfile.darkmode ? newProfile.darkmode === 'on' : false;
+
+  profiles
+    .update(userid, newProfile)
+    .then((profile: Profile) => res.json(profile))
+    .catch((err) => res.status(404).end());
 });

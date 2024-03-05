@@ -1,6 +1,6 @@
 // src/profiles.ts
 import { Document } from "mongoose";
-import { Profile } from "./models/Profile";
+import { Profile } from "./models/profile";
 import ProfileModel from "./models/mongo/profile";
 
 function index(): Promise<Profile[]> {
@@ -20,4 +20,15 @@ function create(profile: Profile): Promise<Profile> {
   return p.save();
 }
 
-export default { index, get, create };
+function update(userid: String, profile: Profile): Promise<Profile> {
+    return new Promise((resolve, reject) => {
+      ProfileModel.findOneAndUpdate({ userid }, profile, {
+        new: true,
+      }).then((profile) => {
+        if (profile) resolve(profile);
+        else reject("Failed to update profile");
+      });
+    });
+}
+
+export default { index, get, create, update };
