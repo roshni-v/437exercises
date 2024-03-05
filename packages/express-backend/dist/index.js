@@ -23,10 +23,12 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 ));
 var import_express = __toESM(require("express"));
 var import_cors = __toESM(require("cors"));
+var import_mongoConnect = require("./mongoConnect");
 const app = (0, import_express.default)();
 const port = process.env.PORT || 3e3;
 app.use((0, import_cors.default)());
 app.use(import_express.default.json());
+(0, import_mongoConnect.connect)("ReadingClassics");
 app.get("/hello", (req, res) => {
   res.send("Hello, World");
 });
