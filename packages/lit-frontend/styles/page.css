@@ -10,6 +10,7 @@
     --background-color: #f0f0f0; /* Default background color */
     --header-background-color: rgba(214, 200, 173, 0.5); /* Default header background color */
     --text-color: #14315C; /* Default text color */
+    --h2-color: #285599; /* Default h2 color */
     --svg-color: var(--text-color); /* Default SVG color */
     --font-family: 'Lexend', Arial, Helvetica, sans-serif; /* Default font family */
     --link-color: #855800; /* Default link color */
@@ -111,6 +112,7 @@ drop-down * {
     --background-color: #333333; /* Dark mode background color */
     --header-background-color: #2B2B2B; /* Dark mode header background color */
     --text-color: #FFFFFF; /* Dark mode text color */
+    --h2-color: #808080; /* Dark mode h2 color */
     --svg-color: var(--text-color); /* Dark mode SVG color */
     --font-family: 'Lexend', Arial, Helvetica, sans-serif; /* Dark mode font family */
     --link-color: #D4AF37; /* Dark mode link color */
@@ -119,7 +121,7 @@ drop-down * {
     color: #FFFFFF;
   }
 
-body.dark-mode button {
+/* body.dark-mode button {
     margin-top: 1em;
     color: #808080;
     font-family: "Lexend", Arial, Helvetica, sans-serif;
@@ -128,21 +130,7 @@ body.dark-mode button {
     border: 1px solid #808080;
     font-weight: 700;
     padding: 0.5em 1em;
-}
-
-body.dark-mode article.intro {
-    position: relative;
-    text-align: left;
-    font-weight: 700;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(to bottom, rgba(51, 51, 51, 0.6), rgba(0, 0, 0, 1)), url('/images/darkModeIndexBackground.jpg');
-    background-size: cover;
-    background-position: center;
-    font-size: 1.5em;
-    padding: 2em;
-    overflow: hidden; 
-}
+} */
 
 header.dark-mode {
     background-color: #2B2B2B;
@@ -158,13 +146,4 @@ h2.dark-mode {
 
 a.dark-mode {
     color: #D4AF37;
-}
-
-.webapp_name.dark-mode {
-    color: #D4AF37;
-}
-
-button.dark-mode {
-    color: #ffffff;
-    border-color: #ffffff;
 }

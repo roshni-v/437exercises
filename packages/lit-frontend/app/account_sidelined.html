@@ -7,16 +7,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Lexend:wght@500&display=swap" rel="stylesheet">
         <link href="/styles/page.css" rel='stylesheet' type='text/css'/>
+        <script type="module" src="/src/components/toggle-switch.ts"></script>
         <script src="/src/dark-mode.ts"></script>
     </head>
-    <body>
-        <article class="intro">
-            <h1 class="webapp_name" style="color: #14315C">Well Read</h1>
-            <h1 style="color: #14315C">A classic novels web app.</h1> 
-            <h1 style="color: #14315C">Peruse available authors and books.</h1> 
-            <h1 style="color: #14315C">Make lists to organize your thoughts.</h1>
-            <h1 style="color: #14315C">Read and virtually annotate.</h1>
-            <a href="home.html"><button>Log In</button></a>
+    <body>    
+        <article>
+            <header>
+                <p><a href = "home.html">Home</a> > Account</p>
+                <h1>                  
+                    Account
+                </h1>
+            </header>
+            <section class="grid-container">   
+                <div class="grid-item">
+                    <h2>Name: </h2><p>Jane Doe</p>
+                    <h2>Email: </h2><p>janedoe@xyz.com</p> 
+                    <h2>Dark Mode: </h2>
+                    <toggle-switch></toggle-switch>
+                </div>                                        
+            </section>
         </article> 
-    </body>    
+    <body>    
 </html>

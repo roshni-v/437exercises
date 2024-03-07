@@ -14,6 +14,7 @@ export class AddNewButton extends LitElement {
       justify-content: center;
       align-items: center;
     }
+
     button {
       display: flex;
       align-items: center;
@@ -25,10 +26,22 @@ export class AddNewButton extends LitElement {
       cursor: pointer;
       background-color: transparent; /* Make the background invisible */
       border: none; /* Make the border invisible */
+    }  
+
+    button:hover {
+      border-radius: 30px;
+      background: radial-gradient(circle at top, rgba(214, 200, 173, 0.3), white);
     }
+
+    button:active {
+      border-radius: 30px;
+      background: radial-gradient(circle at top, rgba(214, 200, 173, 0.5), white);
+    }        
+
     h2 {
       margin: 0;
     }
+
   `;
 
   render() {
