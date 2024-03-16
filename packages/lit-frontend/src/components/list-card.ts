@@ -27,15 +27,6 @@ export class ListCard extends LitElement {
             <h2 style="color: var(--text-color);">${this.title}</h2>
           </slot>
           </div>
-          <drop-down style="margin-left: auto">
-            <svg class="icon" width="24" height="24" style="fill: var(--svg-color);">
-              <use href="/icons/office.svg#more-info" />
-            </svg>
-            <ul slot="menu">
-              <li><a href="" style="font-family: var(--font-family); color: var(--link-color);">Rename List</a></li>
-              <li><a href="" style="font-family: var(--font-family); color: var(--link-color);">Delete List</a></li>
-            </ul>
-          </drop-down>
         </div>
         <ul class="list-items">
           <slot></slot>  
