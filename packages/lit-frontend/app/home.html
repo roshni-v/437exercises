@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Lexend:wght@500&display=swap" rel="stylesheet">
+        <link href="/styles/page.css" rel='stylesheet' type='text/css'/>
+        <script type="module" src="/src/components/drop-down.ts"></script>
+        <script src="/src/user-lists.ts" type="module"></script>
+        <script src="/src/user-list.ts" type="module"></script>
+        <script src="/src/book-items.ts" type="module"></script>
+        <script src="/src/book-item.ts" type="module"></script>
+        <script src="/src/home-container.ts" type="module"></script>
+        <script src="/src/components/list-card-component" type="module"></script>
+        <script src="/src/components/list-card" type="module"></script>
+
+
+
+        <link rel="shortcut icon" href="#">
+    </head>
+    <body>
+        <article>
+            <header>
+                <h1>
+                    <svg class="icon">
+                        <use href="/icons/office.svg#icon-pin" />
+                    </svg>
+                    Home
+                    <drop-down style="float: right">
+                        <svg class="icon">
+                            <use href="/icons/office.svg#icon-profile" />
+                        </svg>
+                        <div slot="menu">  
+                            <a href="account.html">Account</a>
+                            <a href="http://localhost:3000/signout">Logout</a>
+                        </div>
+                    </drop-down> 
+                </h1>
+            </header>
+        </article>
+        <home-container></home-container>        
+     
+    </body>
+</html>

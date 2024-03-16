@@ -1,0 +1,7 @@
+packages/express-backend/.env
+packages/express-backend/src/create_book_db.py
+node_modules/
+packages/express-backend/node_modules/
+packages/lit-frontend/node_modules/
+packages/express-backend/dist/
+packages/lit-frontend/dist/

@@ -1,0 +1,88 @@
+* {
+    margin: 0em;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: rgba(214, 200, 173, 0.5);
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h1 {
+    color: #14315C;
+}
+
+h2 {
+    color: #285599;
+}
+
+a {
+    color: #855800;
+}
+
+h1, h2 {
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+}
+
+.webapp_name {
+    font-family: "Cinzel";
+    font-size: 4em;
+    padding-bottom: 0.1em;
+}
+
+p, a, li {
+    font-family: 'Spectral', Arial, Helvetica, sans-serif;
+}
+
+svg.icon {
+    display: inline;
+    height: 2em;
+    width: 2em;
+    vertical-align: top;
+    fill: currentColor;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "col-1 col-2 col-3";
+}
+
+.intro {
+    position: relative;
+    text-align: left;
+    font-weight: 700;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, rgba(255, 237, 201, 0.6), rgba(255,255,255,1)), url('../images/indexBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    font-size: 1.5em;
+    padding: 2em;
+    overflow: hidden;
+}
+
+button {
+    margin-top: 1em;
+    color: #14315C;
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    background-color: transparent;
+    border-color: #14315C;
+    font-weight: 700;
+    padding: 0.5em;
+}
+
+section {
+    margin: 2em;
+}
